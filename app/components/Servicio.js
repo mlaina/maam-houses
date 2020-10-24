@@ -50,7 +50,7 @@ export default function Servicio(props) {
     const classes = useStyles();
     let imagen = imagenes(props.servicio);
     let tarjeta = classes.root;
-    if(window.innerWidth < 400) {
+    if(window.innerWidth < 600) {
         tarjeta=classes.tarjeta;
     }
     return (
