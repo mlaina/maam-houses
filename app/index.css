@@ -1,0 +1,76 @@
+.App {
+    text-align: center;
+  }
+  html{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    z-index:1;
+  }
+  body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #root, #app{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /* WELCOME */
+  .centrar{
+    text-align: center
+  }
+
+  .centrarBotones{
+    text-align: center
+  }
+
+  .ajustarMargen{
+    margin-top: 20px !important;
+  }
+
+  .ajustarMargenXL{
+    margin-top: 50px !important;
+  }
+
+  .contenedor {
+    background-color: rgba(0, 0, 0, 0.685);
+    border-color: #FFF9B3;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 60px !important;
+    display: block !important;
+    height: 450px;
+    width: 500px !important;
+  }
+
+
+  @media (max-width: 600px) {
+    .contenedor {
+      background-color: rgba(0, 0, 0, 0.685);
+      border-color: #FFF9B3;
+      padding: 40px;
+      margin-top: 40px !important;
+      display: block !important;
+      height: 450px;
+      width: 330px !important;
+    }
+
+    .txtBoton{
+      display: none;
+    }
+  }
+
+  /* Nick */
+
+  .txtInfo{
+    margin-top: 20px;
+    width: 250px;
+    font-family: ui-monospace;
+    margin: auto;
+    text-align: justify;
+  }
