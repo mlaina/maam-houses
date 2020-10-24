@@ -111,7 +111,7 @@ function mobile(classes){
 }
 
 function responsive(classes){
-    if(window.innerWidth < 400){
+    if(window.innerWidth < 600){
         return mobile(classes);
     }
     return normal(classes);
