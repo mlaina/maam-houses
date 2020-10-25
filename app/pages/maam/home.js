@@ -1,11 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fondo from "../../components/Fondo";
-import cabeceraImage from "../../../public/images/LOGO_MAAM_.png";
+import cabeceraImage from "../../../public/images/LOGO_MAAM.svg";
 import {Link} from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Footer from "../../components/Footer";
+import BuildIcon from '@material-ui/icons/Build';
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => ({
     submit: {
@@ -20,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft:"7.5em"
     },
     cabecera:{
-        width:"100%",
-        maxWidth:700
+        width:"90%",
+        maxWidth:500
     },
     enlaces:{
         textDecoration:"none",
@@ -32,6 +34,13 @@ const useStyles = makeStyles((theme) => ({
     },
     footer:{
         width:"100%"
+    },
+    avatar: {
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.primary.main,
+    },
+    mantenimiento:{
+        color: theme.palette.primary.main
     }
 }));
 
@@ -48,7 +57,21 @@ export default function home() {
                         | inmobiliaria |
                     </Typography>
                 </Grid>
-                <Grid  container direction="row" justify="space-around" alignItems="flex-end" spacing={1} className={classes.links}>
+                <Grid item xs={12} align={"center"}>
+                    <Avatar className={classes.avatar}>
+                        <BuildIcon />
+                    </Avatar>
+                    <Typography variant="h6" className={classes.mantenimiento}>
+                        Página en construcción
+                    </Typography>
+                    <Typography variant="h6">
+                        Email: <b>delia@maamhouses.com</b>
+                    </Typography>
+                    <Typography variant="h6">
+                        Telfn: <b>619023155</b>
+                    </Typography>
+                </Grid>
+                {/*<Grid  container direction="row" justify="space-around" alignItems="flex-end" spacing={1} className={classes.links}>
                     <Grid item>
                         <Link to={"who"} className={classes.enlaces}>
                             <Typography variant="h6" color={"primary"}>¿Quiénes somos?</Typography>
@@ -57,7 +80,7 @@ export default function home() {
                             <Typography variant="h6" color={"primary"}>¿Qué hacemos?</Typography>
                         </Link>
                     </Grid>
-                </Grid>
+                </Grid>*/}
             </Grid>
             {/*<Footer/>*/}
         </Fondo>
