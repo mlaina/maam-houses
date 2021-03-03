@@ -3,15 +3,14 @@ import { withStyles, createStyles } from '@material-ui/core';
 
 const styles = (theme) => createStyles({
     white: {
-        backgroundColor: "white",
         position: "absolute",
         top: "0",
         width: "100%",
         height: "100%",
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "0",
+        backgroundColor: "white",
         fontColor: theme.palette.primary.main
     }
 });
