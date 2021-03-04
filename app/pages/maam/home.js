@@ -75,8 +75,8 @@ export default function home() {
                          </Link>
                      </Typography>
                      <Typography variant="h6">
-                         <Link href="tel:629083711">
-                            629083711
+                         <Link href="tel:682104486">
+                            682104486
                          </Link>
                      </Typography>
                      <Box m={2}/>
