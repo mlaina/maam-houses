@@ -1,12 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Fondo from "../../components/Fondo";
 import estudio1 from "../../../public/images/estudio/estudio1.png";
-import estudio2 from "../../../public/images/estudio/estudio2.png";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Atras from "../../components/Atras";
-import Footer from "../../components/Footer";
+import {whoImg} from "./controllers/ImageController";
 
 const useStyles = makeStyles((theme) => ({
     submit: {
@@ -23,10 +20,11 @@ const useStyles = makeStyles((theme) => ({
     },
     estudio: {
         padding: theme.spacing(2),
-        width: 300
+        width: "40em"
     },
     texto:{
-        padding: theme.spacing(1)
+        padding: theme.spacing(1),
+        textAlign: "end"
     },
     container:{
         paddingTop:"1em",
@@ -35,96 +33,38 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function normal(classes){
-    return (
-        <Grid container direction="row" justify="flex-start" alignItems="center" spacing={1} className={classes.container}>
-            <Grid item xs={2}/>
-            <Grid item xs={4}>
-                <Typography variant="h6" color={"primary"} align={"left"}>
-                    quiénes somos?
-                </Typography>
-                <Typography variant="h4" color={"primary"} align={"left"}>
-                    -
-                </Typography>
-                <p className={classes.texto}>
-                    Maam Inmobiliaria está formada por un equipo de profesionales con experiencia y formación en una gran compañía internacional.
-                </p>
-                <p className={classes.texto}>
-                    Esta experiencia nos ha demostrado la demanda de un servicio más personalizado, cercano y completo en el sector.
-                </p>
-                <p className={classes.texto}>
-                    Por eso Maam Inmobiliaria nace con la idea de entender y atender las dudas y necesidades que surgen en el desarrollo de un proyecto inmobiliario.
-                </p>
-            </Grid>
-            <Grid item xs={4}>
-                <img src={estudio1} className={classes.estudio}/>
-                <img src={estudio2} className={classes.estudio}/>
-            </Grid>
-            <Grid item xs={2}/>
-        </Grid>
-    );
-}
-
-
-function mobile(classes){
-    let imagen=classes.estudioMobile;
-    return (
-        <Grid container direction="row" justify="space-around" alignItems="baseline" spacing={1} className={classes.container}>
-            <Grid item xs={2}/>
-            <Grid item xs={8}>
-                <Typography variant="h6" color={"primary"} align={"center"}>
-                    quiénes somos?
-                </Typography>
-                <Typography variant="h4" color={"primary"} align={"center"}>
-                    -
-                </Typography>
-            </Grid>
-            <Grid item xs={2}/>
-            <Grid item xs={1}/>
-            <Grid item xs={10}>
-                <p className={classes.texto}>
-                    Maam Inmobiliaria está formada por un equipo de profesionales con experiencia y formación en una gran compañía internacional.
-                </p>
-            </Grid>
-            <Grid item xs={1}/>
-            <Grid item xs={1}/>
-            <Grid item xs={10}>
-                <img src={estudio1} className={imagen}/>
-
-            </Grid>
-            <Grid item xs={1}/>
-            <Grid item xs={1}/>
-            <Grid item xs={10}>
-                <p className={classes.texto}>
-                    Esta experiencia nos ha demostrado la demanda de un servicio más personalizado, cercano y completo en el sector.
-                </p>
-                <p className={classes.texto}>
-                    Por eso Maam Inmobiliaria nace con la idea de entender y atender las dudas y necesidades que surgen en el desarrollo de un proyecto inmobiliario.
-                </p>
-            </Grid>
-            <Grid item xs={1}/>
-            <Grid item xs={10}>
-                <img src={estudio2} className={imagen}/>
-            </Grid>
-        </Grid>
-    );
-}
-
-function responsive(classes){
-    if(window.innerWidth < 600){
-        return mobile(classes);
-    }
-    return normal(classes);
-}
-
-
 export default function who() {
     const classes = useStyles();
 
     return (
-        <Fondo tipo="white">
-            <Atras/>
-            {responsive(classes)}
-        </Fondo>
+        <Grid container direction="row" justify="flex-start" alignItems="center" spacing={1} className={classes.container}>
+            <Grid item xs={3}/>
+            <Grid item xs={9}>
+                <Typography variant="h4" color={"primary"} align={"left"}>
+                    ¿Quiénes somos?
+                </Typography>
+                <Typography variant="h2" color={"primary"} align={"left"}>
+                    -
+                </Typography>
+            </Grid>
+            <Grid item xs={3}/>
+            <Grid item xs={3}>
+                <p className={classes.texto}>
+                    <b>Maam Arte y Arquitectura</b> S.L, nace <b>2003</b> con el desarrollo de   actividades artísticas y proyectos de arquitectura como actividad fundamental.
+                </p>
+                <p className={classes.texto}>
+                    En el <b>2015</b>, Maam desarrolla su actividad en <b>México</b> colaborando con el Estudio LAM Arquitectos
+                </p>
+                <p className={classes.texto}>
+                    En <b>2018</b>, en España, Maam toma un nuevo rumbo centrando su actividad en el campo residencial, poniendo el foco en el desarrollo de la <b>arquitectura industrializada, ecoeficiente y saludable</b>.
+                </p>
+                <p className={classes.texto}>
+                    En <b>2020</b> Maam <b>une la experiencia inmobiliaria a la arquitectónica</b> para dar un <b>servicio integral</b> como respuesta a la demanda creciente del mercado en los productos de edificación residencial unifamiliar.
+                </p>
+            </Grid>
+            <Grid item xs={6}>
+                <img src={whoImg()} className={classes.estudio}/>
+            </Grid>
+        </Grid>
     );
 }
