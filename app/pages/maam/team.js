@@ -31,9 +31,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "end"
     },
     container:{
-        paddingTop:"1em",
-        height:"100%",
-        width:"100%"
+        padding:"4em 15em"
     }
 }));
 
@@ -42,7 +40,16 @@ export default function Team() {
     const classes = useStyles();
 
     return (
-        <Grid container justify={"center"} spacing={6}>
+        <Grid container className={classes.container} justify={"center"} spacing={6}>
+            <Grid item xs={3}/>
+            <Grid item xs={9}>
+                <Typography variant="h4" color={"primary"} align={"left"}>
+                    Equipo
+                </Typography>
+                <Typography variant="h2" color={"primary"} align={"left"}>
+                    -
+                </Typography>
+            </Grid>
             <Grid item>
                 <Mate img={mates("carlos")} nombre={"CARLOS LAINA CORRAL"} labor={"Arquitecto. Escuela Superior de Arquitectura de Madrid."} to={"arquitectura"}/>
             </Grid>

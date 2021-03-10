@@ -62,7 +62,7 @@ export default function who() {
                     En <b>2020</b> Maam <b>une la experiencia inmobiliaria a la arquitectónica</b> para dar un <b>servicio integral</b> como respuesta a la demanda creciente del mercado en los productos de edificación residencial unifamiliar.
                 </p>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} zeroMinWidth>
                 <img src={whoImg()} className={classes.estudio}/>
             </Grid>
         </Grid>

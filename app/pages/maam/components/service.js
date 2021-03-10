@@ -18,18 +18,23 @@ const useStyles = makeStyles((theme) => ({
         textDecoration:"none!important"
     },
     media: {
-        maxWidth:"100%",
-        maxHeight:"100%"
+        maxHeight:"25em"
     },
     service: {
-        width: "30em",
-        padding: "2em",
-        borderRadius: "40px",
+        height: "29em",
+        padding: "1em 0.5em",
+        transition: 'box-shadow .5s',
+        borderRadius: "20px",
         '&:hover': {
-            webkitBoxShadow: "0 5px 5px #aaa",  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-            mozBoxShadow: "0 5px 5px #aaa",  /* Firefox 3.5 - 3.6 */
+            transform: "translate3d(0, 0, 0)",
+            animation: "zoomin 1s ease",
+            webkitBoxShadow: "0 5px 5px #aaa",
+            mozBoxShadow: "0 5px 5px #aaa",
             boxShadow: "0 5px 5px #aaa"
         }
+    },
+    text:{
+        minWidth: 0
     }
 }));
 
@@ -45,7 +50,7 @@ export default function Service(props) {
                         <Typography gutterBottom variant="h5" component="h2">
                             {props.titulo}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        <Typography className={classes.text} variant="body2" color="textSecondary" component="p">
                             {props.detalle}
                         </Typography>
                     </div>

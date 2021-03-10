@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
     mate: {
         width: "20em",
         padding: "2em",
-        borderRadius: "40px",
+        transition: 'box-shadow .5s',
+        borderRadius: "20px",
         '&:hover': {
             webkitBoxShadow: "0 5px 5px #aaa",  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
             mozBoxShadow: "0 5px 5px #aaa",  /* Firefox 3.5 - 3.6 */

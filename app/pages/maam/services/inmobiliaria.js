@@ -27,9 +27,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "end"
     },
     container:{
-        paddingTop:"1em",
-        height:"100%",
-        width:"100%"
+        padding:"4em 15em"
     }
 }));
 
@@ -38,7 +36,7 @@ export default function Inmobiliaria() {
 
     return (
         <>
-            <Grid container spacing={3} justify={"center"}>
+            <Grid container className={classes.container} spacing={1} justify={"center"}>
                 <Grid item xs={3}/>
                 <Grid item xs={9}>
                     <Typography variant="h4" color={"primary"} align={"left"}>

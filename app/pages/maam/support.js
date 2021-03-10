@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function home() {
+export default function support() {
     const classes = useStyles();
     return (
         <Fondo tipo="white" className={classes.root}>
