@@ -11,8 +11,7 @@ class Routes extends Component {
         return (
             <Switch>
                 <Route exact path="/" component={support}/>
-                <Route path="/test" component={home}/>
-                <Route path="/what" component={What}/>
+                <Route exact path="/test" component={home}/>
                 <Route component={PageNotFound}/>)
             </Switch>
         );
