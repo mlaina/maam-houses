@@ -1,18 +1,20 @@
-var http = require('http');
-
-var env = require('dotenv');
-
-var finalhandler = require('finalhandler');
-var serveStatic = require('serve-static');
+const express = require('express');
+const path = require('path');
+const env = require('dotenv');
 
 env.config();
 
-var serve = serveStatic(process.env.ROUTE_DIST);
+const app = express(),
+    DIST_DIR = __dirname + process.env.ROUTE_DIST,
+    HTML_FILE = path.join(DIST_DIR, 'index.html');
 
-var server = http.createServer(function(req, res) {
-  var done = finalhandler(req, res);
-  serve(req, res, done);
+app.use(express.static(DIST_DIR));
+app.get('*', (req, res) => {
+  res.sendFile(HTML_FILE)
 });
 
-
-server.listen(process.env.PORT);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`App listening to ${PORT}....`);
+  console.log('Press Ctrl+C to quit.');
+});

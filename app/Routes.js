@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Route, Switch} from "react-router-dom";
 import home from "./pages/maam/home";
 import PageNotFound from "./pages/errors/PageNotFound";
-import What from "./pages/maam/what";
 import support from "./pages/maam/support";
 
 
