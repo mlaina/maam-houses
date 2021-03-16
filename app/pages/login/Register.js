@@ -17,8 +17,7 @@ const styles = (theme) => createStyles({
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    flexDirection: 'column'
   },
   avatar: {
     margin: theme.spacing(1),

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Route, Switch} from "react-router-dom";
-import home from "./pages/maam/home";
+// import home from "./pages/maam/home";
 import PageNotFound from "./pages/errors/PageNotFound";
 import support from "./pages/maam/support";
 
@@ -10,7 +10,7 @@ class Routes extends Component {
         return (
             <Switch>
                 <Route exact path="/" component={support}/>
-                <Route exact path="/test" component={home}/>
+                {/*<Route exact path="/test" component={home}/>*/}
                 <Route component={PageNotFound}/>)
             </Switch>
         );

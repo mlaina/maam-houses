@@ -40,7 +40,7 @@ export default function Team() {
     const classes = useStyles();
 
     return (
-        <Grid container className={classes.container} justify={"center"} spacing={6}>
+        <Grid container className={classes.container} spacing={6}>
             <Grid item xs={3}/>
             <Grid item xs={9}>
                 <Typography variant="h4" color={"primary"} align={"left"}>

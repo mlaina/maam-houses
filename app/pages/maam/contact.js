@@ -43,7 +43,7 @@ export default function Contact() {
     const classes = useStyles();
 
     return (
-        <Grid container className={classes.container} spacing={3} justify={"center"}>
+        <Grid container className={classes.container} spacing={3} >
             <Grid item xs={3}/>
             <Grid item xs={9}>
                 <Typography variant="h4" color={"primary"} align={"left"}>
@@ -54,17 +54,17 @@ export default function Contact() {
                 </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Typography align={"center"}>
+                <Typography >
                     <b>ARQUITECTURA</b> CARLOS LAINA CORRAL 682104486 claina@maamhouses.com
                 </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Typography align={"center"}>
+                <Typography>
                     <b>INTERIORISMO Y DISEÑO</b> MIRIAM LAINA PÉREZ  656402912 mlaina@maamhouses.com
                 </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Typography  align={"center"}>
+                <Typography >
                     <b>INMOBILIARIA</b> DELIA PÉREZ LAGUIA  619023155 dperez@maamhouses.com
                 </Typography>
             </Grid>

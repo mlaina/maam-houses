@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         width: "100%"
     },
     mate: {
-        width: "20em",
+        width: "15em",
         padding: "2em",
         transition: 'box-shadow .5s',
         borderRadius: "20px",

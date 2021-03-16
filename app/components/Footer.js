@@ -7,7 +7,7 @@ import Link from '@material-ui/core/Link';
 
 function Copyright() {
     return (
-        <Typography variant="body2" color="textSecondary" align={'center'}>
+        <Typography variant="body2" color="textSecondary" >
             {'Copyright © '}
             <Link color="inherit" href="https://virtualdesk.es/">
                 maamhouses.com
@@ -45,7 +45,7 @@ export default function StickyFooter() {
         <div className={classes.root}>
             <footer className={classes.footer}>
                 <Container maxWidth="sm">
-                    <Typography align={'center'}>
+                    <Typography >
                         <b>MAAM Arte y Arquitectura S.L</b>
                         <br/>
                         C/ Antonio Machado, 4 Becerril de la sierra 28490 Madrid

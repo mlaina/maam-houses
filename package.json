@@ -37,12 +37,15 @@
     "material-auto-rotating-carousel": "^3.0.2",
     "moment": "^2.27.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pdf-viewer-reactjs": "^2.2.3",
+    "pdfjs-dist": "^2.6.347",
     "react": "^16.13.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.7.5",
     "react-material-ui-carousel": "^1.8.3",
     "react-multistep": "^5.1.0",
+    "react-pdf": "^5.2.0",
     "react-router-dom": "^5.1.2",
     "react-slide-routes": "^0.13.0",
     "react-step-wizard": "^5.3.5",
@@ -50,7 +53,8 @@
     "reload": "^3.1.0",
     "serve-static": "^1.14.1",
     "styled-components": "^5.2.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "worker-loader": "^3.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

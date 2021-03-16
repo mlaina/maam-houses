@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     },
     texto:{
         padding: theme.spacing(1),
-        textAlign: "end"
     },
     container:{
         paddingTop:"1em",

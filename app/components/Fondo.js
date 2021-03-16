@@ -7,8 +7,6 @@ const styles = (theme) => createStyles({
         top: "0",
         width: "100%",
         height: "100%",
-        justifyContent: "center",
-        alignItems: "center",
         padding: "0",
         backgroundColor: "white",
         fontColor: theme.palette.primary.main
