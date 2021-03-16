@@ -14,6 +14,7 @@ import arquitectura from "../../../public/images/maam-init/arquitectura.png";
 import arquitectura2 from "../../../public/images/maam-init/arquitectura2.png";
 import inmobiliaria from "../../../public/images/maam-init/inmobiliaria.png";
 import interiorismo from "../../../public/images/maam-init/interiorismo.png";
+import contacto from "../../../public/images/maam-init/contacto.png";
 import Link from "@material-ui/core/Link";
 
 
@@ -52,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
     },
     images: {
         width: "90%"
+    },
+    contacto: {
+        width: "30%"
     }
 }));
 
@@ -92,71 +96,75 @@ export default function support() {
                     <img className={classes.images} src={interiorismo}/>
                 </Grid>
                 <Grid item xs={12} align={"center"}>
-                     <Typography variant="h5">
-                         <b>Arquitectura</b>
-                     </Typography>
-                     <Typography variant="h6">
-                         Carlos Laina
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="mailto:claina@maamhouses.com">
-                            claina@maamhouses.com
-                         </Link>
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="tel:682104486">
-                            682104486
-                         </Link>
-                     </Typography>
-                     <Box m={2}/>
-                     <Typography variant="h5">
-                         <b>Arquitectura de Interiores</b>
-                     </Typography>
-                     <Typography variant="h6">
-                         Miriam Laina
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="mailto:mlaina@maamhouses.com">
-                            mlaina@maamhouses.com
-                         </Link>
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="tel:656402912">
-                            656402912
-                         </Link>
-                     </Typography>
-                     <Box m={2}/>
-                     <Typography variant="h5">
-                         <b>Inmobiliaria</b>
-                     </Typography>
-                     <Typography variant="h6">
-                         Delia Pérez
-                     </Typography>
-                    <Typography variant="h6">
-                        <Link href="mailto:dperez@maamhouses.com">
-                            dperez@maamhouses.com
-                        </Link>
-                    </Typography>
-                    <Typography variant="h6">
-                        <Link href="tel:619023155">
-                            619023155
-                        </Link>
-                    </Typography>
-                     <Typography variant="h6">
-                         Isabel Carmona
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="mailto:icarmona@maamhouses.com">
-                            icarmona@maamhouses.com
-                         </Link>
-                     </Typography>
-                     <Typography variant="h6">
-                         <Link href="tel:636160043">
-                            636160043
-                         </Link>
-                     </Typography>
-                    <Box m={2}/>
+                    <img className={classes.images} src={contacto}/>
                 </Grid>
+                {/*<Grid item xs={12} align={"center"}>*/}
+                {/*    <box m={2}/>*/}
+                {/*     <Typography variant="h5">*/}
+                {/*         <b>Arquitectura</b>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         Carlos Laina*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="mailto:claina@maamhouses.com">*/}
+                {/*            claina@maamhouses.com*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="tel:682104486">*/}
+                {/*            682104486*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*     <Box m={2}/>*/}
+                {/*     <Typography variant="h5">*/}
+                {/*         <b>Arquitectura de Interiores</b>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         Miriam Laina*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="mailto:mlaina@maamhouses.com">*/}
+                {/*            mlaina@maamhouses.com*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="tel:656402912">*/}
+                {/*            656402912*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*     <Box m={2}/>*/}
+                {/*     <Typography variant="h5">*/}
+                {/*         <b>Inmobiliaria</b>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         Delia Pérez*/}
+                {/*     </Typography>*/}
+                {/*    <Typography variant="h6">*/}
+                {/*        <Link href="mailto:dperez@maamhouses.com">*/}
+                {/*            dperez@maamhouses.com*/}
+                {/*        </Link>*/}
+                {/*    </Typography>*/}
+                {/*    <Typography variant="h6">*/}
+                {/*        <Link href="tel:619023155">*/}
+                {/*            619023155*/}
+                {/*        </Link>*/}
+                {/*    </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         Isabel Carmona*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="mailto:icarmona@maamhouses.com">*/}
+                {/*            icarmona@maamhouses.com*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*     <Typography variant="h6">*/}
+                {/*         <Link href="tel:636160043">*/}
+                {/*            636160043*/}
+                {/*         </Link>*/}
+                {/*     </Typography>*/}
+                {/*    <Box m={2}/>*/}
+                {/*</Grid>*/}
             </Grid>
         </Fondo>
     );
