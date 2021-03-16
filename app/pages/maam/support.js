@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.main
     },
     images: {
-        width: "100%"
+        width: "90%"
     }
 }));
 
