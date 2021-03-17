@@ -73,7 +73,7 @@ export default function support() {
                     <Avatar className={classes.avatar}>
                         <BuildIcon />
                     </Avatar>
-                    <Typography variant="h4" className={classes.mantenimiento}>
+                    <Typography variant="h6" className={classes.mantenimiento}>
                         Página en construcción
                     </Typography>
                  </Grid>
