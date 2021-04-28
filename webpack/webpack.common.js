@@ -4,7 +4,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './app/Index.js',
+  entry: './app/index.js',
   plugins: [
     new HtmlWebpackPlugin({
         template: './app/index.html'
