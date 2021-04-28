@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Fondo from "../../components/Fondo";
 import cabeceraImage from "../../../public/images/LOGO_MAAM.svg";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -15,7 +14,6 @@ import arquitectura2 from "../../../public/images/maam-init/arquitectura2.png";
 import inmobiliaria from "../../../public/images/maam-init/inmobiliaria.png";
 import interiorismo from "../../../public/images/maam-init/interiorismo.png";
 import contacto from "../../../public/images/maam-init/contacto.png";
-import Link from "@material-ui/core/Link";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -62,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 export default function support() {
     const classes = useStyles();
     return (
-        <Fondo tipo="white" className={classes.root}>
+        <div className={classes.root}>
             <Grid container direction="row" justify="center" alignItems="center" spacing={1}>
                 <Box m={4}/>
                 <Grid item xs={12} align={"center"}>
@@ -74,7 +72,7 @@ export default function support() {
                         <BuildIcon />
                     </Avatar>
                     <Typography variant="h6" className={classes.mantenimiento}>
-                        Página en construcción
+                        página en construcción
                     </Typography>
                  </Grid>
                 <Grid item xs={12} align={"center"}>
@@ -166,6 +164,6 @@ export default function support() {
                 {/*    <Box m={2}/>*/}
                 {/*</Grid>*/}
             </Grid>
-        </Fondo>
+        </div>
     );
 }

@@ -1,75 +1,86 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Fondo from "../../components/Fondo";
 import maam from "../../../public/images/maam.svg";
-import NavBar from "../../components/NavBar";
-import Who from "./who";
 import Grid from "@material-ui/core/Grid";
-import Team from "./team";
-import Services from "./services";
-import Contact from "./contact";
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import Button from "@material-ui/core/Button";
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
+import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+import Typography from "@material-ui/core/Typography";
+import KingBedIcon from '@material-ui/icons/KingBed';
 
 const useStyles = makeStyles((theme) => ({
-    submit: {
-        margin: theme.spacing(3, 0, 2),
-    },
     root:{
         flexGrow: 1,
         overflow: "hidden"
     },
-    light:{
-        color:theme.palette.secondary.light,
-        paddingLeft:"7.5em"
-    },
-    cabecera:{
-        width:"90%",
-        maxWidth:500
-    },
-    enlaces:{
-        textDecoration:"none",
-        textAlign:"center"
-    },
-    links:{
-        paddingTop:"5em"
-    },
-    footer:{
-        width:"100%"
-    },
-    avatar: {
-        margin: theme.spacing(1),
-        backgroundColor: theme.palette.primary.main,
-    },
-    mantenimiento:{
-        color: theme.palette.primary.main
-    },
     media: {
-        width: "33%",
-        margin: "0 33%"
-    }
+        width: "30%",
+        margin: "0 35%",
+        [theme.breakpoints.down('sm')]: {
+            width: "70%",
+            margin: "0 15%"
+        }
+    },
+    but: {
+        margin:"2em",
+        "&:hover": {
+            color: theme.palette.primary.main
+        },
+        [theme.breakpoints.down('sm')]: {
+            margin: "2em",
+        }
+    },
+    icons: {
+        fontSize: "7.5em",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "5em",
+        }
+    },
+    group: {
+        marginTop: "3em",
+        [theme.breakpoints.down('sm')]: {
+            marginTop: "3em",
+        }
+    },
+    footer: {
+        marginTop: "15em",
+        backgroundColor: "#333",
+        color: "white",
+        height: "10em"
+    },
 }));
 
 export default function home() {
     const classes = useStyles();
     return (
-        <Fondo tipo="white" className={classes.root}>
-            <NavBar/>
+        <div className={classes.root}>
             <Grid container justify = "center">
                 <Grid item xs={12}>
                     <img className={classes.media} src={maam}/>
                 </Grid>
-                <Grid item xs={12}>
-                    <Who/>
+                <Grid item className={classes.group}>
+                    <Button className={classes.but} href="/diseno">
+                        <BubbleChartIcon className={classes.icons}/>
+                        <Typography align={"center"}><b>Diseño</b></Typography>
+                    </Button>
+                    <Button className={classes.but} href="/arquitectura">
+                        <AccountBalanceIcon className={classes.icons}/>
+                        <Typography align={"center"}><b>Arquitectura</b></Typography>
+                    </Button>
+                    <Button className={classes.but} href="/inmobiliaria">
+                        <HomeWorkIcon className={classes.icons}/>
+                        <Typography align={"center"}><b>Inmobiliaria</b></Typography>
+                    </Button>
+                    <Button className={classes.but} href="/interiorismo">
+                        <KingBedIcon className={classes.icons}/>
+                        <Typography align={"center"}><b>Interiorismo</b></Typography>
+                    </Button>
                 </Grid>
-                <Grid item xs={12}>
-                    <Team/>
-                </Grid>
-                <Grid item xs={12}>
-                    <Services/>
-                </Grid>
-                <Grid item xs={12}>
-                    <Contact/>
+                <Grid item xs={12} className={classes.footer}>
+                    <Typography align={"center"}><b>Contacto</b></Typography>
                 </Grid>
             </Grid>
-        </Fondo>
+        </div>
     );
 }

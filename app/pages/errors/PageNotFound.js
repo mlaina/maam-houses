@@ -20,12 +20,12 @@ const PageNotFound = () => {
     return (
         <div className={classes.root}>
             <div className={classes.root}>
-                <Typography color={"secondary"} variant="h1">Page not found</Typography>
+                <Typography color={"primary"} variant="h1">Page not found</Typography>
             </div>
             <Link to={'/'}>
                 <div className={classes.root}>
                     <IconButton>
-                        <FindReplaceIcon color={"secondary"} className={classes.icon}/>
+                        <FindReplaceIcon color={"primary"} className={classes.icon}/>
                     </IconButton>
                 </div>
             </Link>

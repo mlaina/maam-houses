@@ -21,6 +21,18 @@ const theme = createMuiTheme({
       },
       tonalOffset: 0.2,
     },
+    overrides: {
+        MuiButton: {
+            label: {
+               display: "block"
+            }
+        },
+        MuiListItem: {
+            root: {
+                textAlign: "right"
+            }
+        },
+    }
   });
 
 
